@@ -267,8 +267,12 @@
             });
 
 	    $("#btnClearData").on('click',function(){
+		    if($('.basic').val()==""){
+		    alert("Please Enter UserName!")
+		    }else{
 		$("#tabshow").addClass("invisible");
 		$('.basic').val("");
+		    }
 	    });
         </script>
 </body>
